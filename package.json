@@ -11,8 +11,8 @@
     "ts:lint": "tslint -c tslint.json -p tsconfig.json --fix"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "James Perih <james@fourandahalfgiraffes.ca>",
+  "license": "UNLICENSED",
   "dependencies": {
     "@types/uuid": "^8.0.0",
     "body-parser": "^1.19.0",
