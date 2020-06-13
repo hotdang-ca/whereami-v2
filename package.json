@@ -1,0 +1,32 @@
+{
+  "name": "whereami",
+  "version": "2.0.0",
+  "description": "",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch src -e js,ts,ejs --exec npm run dev:start",
+    "dev:start": "npm run build && npm run start",
+    "build": "tsc",
+    "start": "node .",
+    "ts:lint": "tslint -c tslint.json -p tsconfig.json --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/uuid": "^8.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.5"
+  }
+}
